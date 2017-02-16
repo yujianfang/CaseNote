@@ -7,7 +7,7 @@
     <View
         android:layout_width="match_parent"
         android:layout_height="@dimen/one_layout_dp"
-        android:background="@android:color/darker_gray"></View>
+        android:background="@android:color/darker_gray"/>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -26,7 +26,7 @@
         <View
             android:layout_width="@dimen/one_layout_dp"
             android:layout_height="match_parent"
-            android:background="@android:color/darker_gray"></View>
+            android:background="@android:color/darker_gray"/>
 
         <RadioGroup
             android:id="@+id/case_type"
@@ -57,7 +57,7 @@
     <View
         android:layout_width="match_parent"
         android:layout_height="1dp"
-        android:background="@android:color/darker_gray"></View>
+        android:background="@android:color/darker_gray"/>
     <!-- 输入收入或支出的金额-->
     <LinearLayout
         android:layout_width="match_parent"
@@ -76,14 +76,14 @@
         <View
             android:layout_width="@dimen/one_layout_dp"
             android:layout_height="match_parent"
-            android:background="@android:color/darker_gray"></View>
+            android:background="@android:color/darker_gray"/>
 
         <EditText
             android:id="@+id/moneycount"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="2"
-            android:inputType="number"
+            android:inputType="numberDecimal"
             android:hint="@string/moneydescribe" />
 
     </LinearLayout>
@@ -91,7 +91,7 @@
     <View
         android:layout_width="match_parent"
         android:layout_height="1dp"
-        android:background="@android:color/darker_gray"></View>
+        android:background="@android:color/darker_gray"/>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -111,7 +111,7 @@
         <View
             android:layout_width="@dimen/one_layout_dp"
             android:layout_height="match_parent"
-            android:background="@android:color/darker_gray"></View>
+            android:background="@android:color/darker_gray"/>
 
         <Button
             android:id="@+id/selectDate"
@@ -126,7 +126,7 @@
     <View
         android:layout_width="match_parent"
         android:layout_height="@dimen/one_layout_dp"
-        android:background="@android:color/darker_gray"></View>
+        android:background="@android:color/darker_gray"/>
 
     <LinearLayout
         android:layout_width="match_parent"
