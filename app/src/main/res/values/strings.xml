@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">CaseNote</string>
+    <string name="type">请选择输入类型</string>
+</resources>
