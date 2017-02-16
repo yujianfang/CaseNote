@@ -1,20 +1,183 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
-<LinearLayout
-    android:orientation="horizontal"
-    android:layout_width="match_parent"
-    android:layout_height="20dp">
-    <TextView
-        android:layout_width="0dp"
-        android:layout_weight="1"
-        android:layout_height="match_parent" />
-    <EditText
-        android:layout_width="0dp"
-        android:layout_weight="1"
-        android:hint="@string/app_name"
-        android:layout_height="match_parent" />
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <!--收入类别选择-->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/one_layout_dp"
+        android:background="@android:color/darker_gray"></View>
 
-</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/layout_default_height"
+
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/typeName"
+            android:textSize="@dimen/test_size_eighteen" />
+
+        <View
+            android:layout_width="@dimen/one_layout_dp"
+            android:layout_height="match_parent"
+            android:background="@android:color/darker_gray"></View>
+
+        <RadioGroup
+            android:id="@+id/case_type"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/case_income"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:checked="true"
+                android:text="@string/income" />
+
+            <RadioButton
+                android:id="@+id/case_payout"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/payout" />
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"></View>
+    <!-- 输入收入或支出的金额-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/layout_default_height"
+
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/money"
+            android:textSize="@dimen/test_size_eighteen" />
+
+        <View
+            android:layout_width="@dimen/one_layout_dp"
+            android:layout_height="match_parent"
+            android:background="@android:color/darker_gray"></View>
+
+        <EditText
+            android:id="@+id/moneycount"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:inputType="number"
+            android:hint="@string/moneydescribe" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"></View>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/layout_default_height"
+        android:orientation="horizontal"
+
+        >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/selectDate"
+            android:textSize="@dimen/test_size_eighteen" />
+
+        <View
+            android:layout_width="@dimen/one_layout_dp"
+            android:layout_height="match_parent"
+            android:background="@android:color/darker_gray"></View>
+
+        <Button
+            android:id="@+id/selectDate"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+
+            />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/one_layout_dp"
+        android:background="@android:color/darker_gray"></View>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/describe"
+            android:textSize="@dimen/test_size_eighteen"
+            android:gravity="center"
+            />
+
+        <View
+            android:layout_width="@dimen/one_layout_dp"
+            android:layout_height="match_parent"
+            android:background="@android:color/darker_gray" />
+
+        <EditText
+            android:id="@+id/describe_cash"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/one_layout_dp"
+        android:background="@android:color/darker_gray"></View>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/save_cash"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/save" />
+
+        <Button
+            android:id="@+id/clear_case_info"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/clear" />
+    </LinearLayout>
 </LinearLayout>

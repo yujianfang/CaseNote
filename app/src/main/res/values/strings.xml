@@ -1,4 +1,15 @@
 <resources>
     <string name="app_name">CaseNote</string>
     <string name="type">请选择输入类型</string>
+    <string name="typeName">类别</string>
+    <string name="income">收入</string>
+    <string name="payout">支出</string>
+    <string name="money">金额</string>
+    <string name="moneydescribe">请输入金额</string>
+    <string name="selectDate">日期</string>
+
+    <string name="save">保存</string>
+    <string name="clear">清空</string>
+
+    <string name="describe">描述</string>
 </resources>
