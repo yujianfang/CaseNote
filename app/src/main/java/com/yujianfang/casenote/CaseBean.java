@@ -10,6 +10,9 @@
  ******************************************************************************/
 package com.yujianfang.casenote;
 
+import org.json.JSONException;
+import org.json.JSONObject;
+
 import java.util.Date;
 import java.util.UUID;
 
@@ -17,6 +20,29 @@ import java.util.UUID;
  * Created by yujianfang on 2017/2/16.
  */
 public class CaseBean {
+    private static final String ID= "uuid";
+    private static final String CASH_TYPE= "caseType";
+    private static final String CASH_COUNT= "caseCount";
+    private static final String CASH_DATE= "caseDate";
+    private static final String CASE_DESCRIBE= "caseDescribe";
+    public CaseBean(JSONObject jsonObject)throws JSONException{
+        mUUid = UUID.fromString(jsonObject.getString(ID));
+        mCaseType = jsonObject.getBoolean(CASH_TYPE);
+        mNumber = jsonObject.getDouble(CASH_COUNT);
+        mDate = (Date)jsonObject.get(CASH_DATE);
+        mDescribe = jsonObject.getString(CASE_DESCRIBE);
+    }
+
+    public JSONObject toJson()throws JSONException{
+        JSONObject json = new JSONObject();
+        json.put(ID,mUUid.toString());
+        json.put(CASH_TYPE,mCaseType);
+        json.put(CASH_COUNT,mNumber);
+        json.put(CASH_DATE,mDate);
+        json.put(CASE_DESCRIBE,mDescribe);
+
+        return json;
+    }
     public UUID getmUUid() {
         return mUUid;
     }

@@ -10,7 +10,7 @@ public class MainActivity extends BaseActivity {
     @Override
     public Fragment createFragment() {
 
-        return CaseNoteFragment.getCaseNoteFragment();
+        return null;
     }
 
     @Override

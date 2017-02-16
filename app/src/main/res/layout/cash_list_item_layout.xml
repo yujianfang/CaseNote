@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    >
+   <TextView
+       android:id="@+id/datetime"
+       android:layout_width="0dp"
+       android:layout_weight="1"
+       android:layout_height="match_parent"
+       android:textSize="@dimen/test_size_eighteen"
+       />
+    <View
+        android:layout_width="@dimen/one_layout_dp"
+        android:layout_height="match_parent"
+        android:background="@android:color/darker_gray"
+        />
+    <TextView
+        android:id="@+id/cash_type_item"
+        android:layout_width="70dp"
+        android:layout_height="match_parent"
+        android:textSize="@dimen/test_size_eighteen"
+        />
+    <View
+        android:layout_width="@dimen/one_layout_dp"
+        android:layout_height="match_parent"
+        android:background="@android:color/darker_gray"
+        />
+</LinearLayout>
