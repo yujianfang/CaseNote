@@ -21,12 +21,13 @@ import android.os.Bundle;
 public abstract class BaseActivity extends Activity{
 
     public abstract Fragment createFragment();
-
-
+    protected int getLayoutId(){
+        return R.layout.base_fragment_layout;
+    }
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.base_fragment_layout);
+        setContentView(getLayoutId());
         FragmentManager fragmentManager = getFragmentManager();
 
         Fragment fragment = fragmentManager.findFragmentById(R.id.fragmentLayoutContainer);

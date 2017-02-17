@@ -42,7 +42,7 @@ public class CaseNoteFragment extends Fragment implements View.OnClickListener{
     //定义日期返回处理值
     private static final int REQUEST_DATE = 1111;
     private static final String DATA_DIALOG = "date";
-    private static final String CASH_ID = "cashUUID";
+    public static final String CASH_ID = "cashUUID";
     private CaseBean mCaseBean;
 
     public static  Fragment newInstance(UUID uuid){

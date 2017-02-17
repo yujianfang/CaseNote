@@ -27,4 +27,21 @@
         android:layout_height="match_parent"
         android:background="@android:color/darker_gray"
         />
+    <TextView
+    android:id="@+id/cash_count_item"
+    android:layout_width="70dp"
+    android:layout_height="match_parent"
+    android:textSize="@dimen/test_size_eighteen"
+    />
+    <View
+        android:layout_width="@dimen/one_layout_dp"
+        android:layout_height="match_parent"
+        android:background="@android:color/darker_gray"
+        />
+    <ImageView
+        android:id="@+id/detail_info"
+        android:layout_width="40dp"
+        android:layout_height="match_parent"
+        android:src="@android:drawable/ic_menu_edit"
+        />
 </LinearLayout>

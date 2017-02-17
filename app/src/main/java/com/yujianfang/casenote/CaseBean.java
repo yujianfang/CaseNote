@@ -25,6 +25,11 @@ public class CaseBean {
     private static final String CASH_COUNT= "caseCount";
     private static final String CASH_DATE= "caseDate";
     private static final String CASE_DESCRIBE= "caseDescribe";
+   public CaseBean(){
+       mUUid = UUID.randomUUID();
+       mDate = new Date();
+   }
+
     public CaseBean(JSONObject jsonObject)throws JSONException{
         mUUid = UUID.fromString(jsonObject.getString(ID));
         mCaseType = jsonObject.getBoolean(CASH_TYPE);
